@@ -5,20 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subpage</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        html, body {
+            height: 100%;
             margin: 0;
-            padding: 20px;
+            font-family: Arial, sans-serif;
         }
-        h1 {
+        body {
+            display: flex;
+        }
+        .left-panel {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .left-panel img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .left-panel h2 {
+            margin-top: 10px;
+        }
+        .left-panel ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .left-panel ul li {
+            margin: 10px 0;
+        }
+        .left-panel ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .left-panel ul li a:hover {
+            text-decoration: underline;
+        }
+        .main-panel {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .main-panel section {
+            margin-bottom: 20px;
+        }
+        .main-panel h2 {
             border-bottom: 2px solid #ccc;
             padding-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Subpage</h1>
-    <p>This is the content of the subpage. You can add more sections and content here.</p>
-    <a href="../index.html">Back to Main Page</a> <!-- Link back to the main page -->
+    <!-- Include the left panel template -->
+    <div id="left-panel-container"></div>
+    <div class="main-panel">
+        <section>
+            <h2>Subpage</h2>
+            <p>This is the content of the subpage. You can add more sections and content here.</p>
+        </section>
+        <a href="../index.html">Back to Main Page</a> <!-- Link back to the main page -->
+    </div>
+    <script>
+        // Fetch and include the left panel template
+        fetch('../templates/left-panel.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('left-panel-container').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
