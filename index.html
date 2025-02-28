@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .left-panel {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .left-panel img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .left-panel h2 {
+            margin-top: 10px;
+        }
+        .left-panel ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .left-panel ul li {
+            margin: 10px 0;
+        }
+        .left-panel ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .left-panel ul li a:hover {
+            text-decoration: underline;
+        }
+        .main-panel {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .main-panel section {
+            margin-bottom: 20px;
+        }
+        .main-panel h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-panel">
+        <img src="path/to/your/photo.jpg" alt="Your Photo">
+        <h2>Your Name</h2>
+        <ul>
+            <li><a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a></li>
+            <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a></li>
+            <!-- Add more social media links as needed -->
+        </ul>
+    </div>
+    <div class="main-panel">
+        <section>
+            <h2>About Me</h2>
+            <p>This is the about me section. You can write a brief introduction about yourself here.</p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <p>This section can list your projects. You can add links and descriptions for each project.</p>
+        </section>
+        <section>
+            <h2>Blog</h2>
+            <p>This section can contain your blog posts. You can add links to individual blog posts here.</p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>This section can contain your contact information. You can add a contact form or email address here.</p>
+        </section>
+    </div>
+</body>
+</html>
