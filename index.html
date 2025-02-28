@@ -10,12 +10,16 @@
             margin: 0;
             padding: 0;
             display: flex;
+            height: 100vh;
         }
         .left-panel {
             width: 250px;
             background-color: #f4f4f4;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .left-panel img {
             border-radius: 50%;
@@ -43,6 +47,7 @@
         .main-panel {
             flex-grow: 1;
             padding: 20px;
+            overflow-y: auto;
         }
         .main-panel section {
             margin-bottom: 20px;
@@ -55,8 +60,10 @@
 </head>
 <body>
     <div class="left-panel">
-        <img src="path/to/your/photo.jpg" alt="Your Photo">
-        <h2>Your Name</h2>
+        <div>
+            <img src="path/to/your/photo.jpg" alt="Your Photo">
+            <h2>Your Name</h2>
+        </div>
         <ul>
             <li><a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a></li>
             <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
