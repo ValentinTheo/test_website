@@ -62,16 +62,8 @@
     </style>
 </head>
 <body>
-    <div class="left-panel">
-        <img src="path/to/your/photo.jpg" alt="Your Photo">
-        <h2>Your Name</h2>
-        <ul>
-            <li><a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a></li>
-            <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a></li>
-            <li><a href="pages/subpage.html">Subpage</a></li> <!-- Link to the subpage -->
-        </ul>
-    </div>
+    <!-- Include the left panel template -->
+    <div id="left-panel-container"></div>
     <div class="main-panel">
         <section>
             <h2>About Me</h2>
@@ -90,5 +82,13 @@
             <p>This section can contain your contact information. You can add a contact form or email address here.</p>
         </section>
     </div>
+    <script>
+        // Fetch and include the left panel template
+        fetch('templates/left-panel.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('left-panel-container').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
