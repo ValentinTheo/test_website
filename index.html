@@ -15,20 +15,26 @@
         }
         .left-panel {
             width: 250px;
-            background-color: #f4f4f4;
+            background-image: url('/images/background.jpg');
+            background-size: cover;
+            background-position: center;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             height: 100vh;
             box-sizing: border-box;
+            position: relative;
+            z-index: 1;
         }
-        .left-panel img {
+        .left-panel img.profile-photo {
             border-radius: 50%;
             width: 150px;
             height: 150px;
             object-fit: cover;
+            background-color: rgba(255, 255, 255, 0.5); /* Optional: Add a semi-transparent background to the profile photo */
         }
         .left-panel h2 {
             margin-top: 10px;
+            color: white; /* Ensure the text is visible over the background image */
         }
         .left-panel ul {
             list-style-type: none;
@@ -40,7 +46,7 @@
         }
         .left-panel ul li a {
             text-decoration: none;
-            color: #333;
+            color: white; /* Ensure the links are visible over the background image */
         }
         .left-panel ul li a:hover {
             text-decoration: underline;
@@ -51,6 +57,9 @@
             overflow-y: auto;
             height: 100vh;
             box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.9); /* Optional: Add a semi-transparent background to the main panel */
+            position: relative;
+            z-index: 2;
         }
         .main-panel section {
             margin-bottom: 20px;
@@ -84,7 +93,7 @@
     </div>
     <script>
         // Fetch and include the left panel template
-        fetch('templates/left-panel.html')
+        fetch('/templates/left-panel.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('left-panel-container').innerHTML = data;
