@@ -7,16 +7,42 @@
     <style>
         body {
             display: flex;
+            font-family: Arial, sans-serif;
         }
         .left-panel, .main-content {
             padding: 20px;
         }
         .left-panel {
             width: 25%;
-            border-right: 1px solid #ccc;
+            border-right: 1px solid #e1e4e8;
         }
         .main-content {
             width: 75%;
+        }
+        .left-panel ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .left-panel li {
+            margin-bottom: 10px;
+        }
+        .github-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #0366d6;
+            background-color: transparent;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .github-btn:hover {
+            background-color: #f3f4f6;
+            color: #0366d6;
+            border-color: #d1d5da;
         }
     </style>
 </head>
@@ -39,9 +65,14 @@
                 .catch(error => console.error('Error loading content:', error));
         }
 
-        // Load left panel and main content
+        // Function to load a page into the main content area
+        function loadPage(url) {
+            loadContent(url, 'main-content');
+        }
+
+        // Load left panel and default main content
         loadContent('templates/left-panel.html', 'left-panel');
-        loadContent('pages/subpage.html', 'main-content');
+        loadContent('pages/subpage.html', 'main-content'); // Default page
     </script>
 </body>
 </html>
