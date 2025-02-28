@@ -1,104 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--     <base href="https://valentintheo.github.io/test_website/"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website Layout</title>
+    <title>My GitHub Page</title>
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
         body {
             display: flex;
         }
+        .left-panel, .main-content {
+            padding: 20px;
+        }
         .left-panel {
-            width: 250px;
-/*             background-image: url('images/P1040161.jpg'); */
-            background-size: cover;
-            background-position: center;
-            padding: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            height: 100vh;
-            box-sizing: border-box;
-            position: relative;
-            z-index: 1; /* Ensure the left panel is below the main panel */
+            width: 25%;
+            border-right: 1px solid #ccc;
         }
-        .left-panel img.profile-photo {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            background-color: rgba(255, 255, 255, 0.5); /* Optional: Add a semi-transparent background to the profile photo */
-        }
-        .left-panel h2 {
-            margin-top: 10px;
-            color: white; /* Ensure the text is visible over the background image */
-        }
-        .left-panel ul {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-        .left-panel ul li {
-            margin: 10px 0;
-        }
-        .left-panel ul li a {
-            text-decoration: none;
-            color: white; /* Ensure the links are visible over the background image */
-        }
-        .left-panel ul li a:hover {
-            text-decoration: underline;
-        }
-        .main-panel {
-            flex-grow: 1;
-            padding: 20px;
-            overflow-y: auto;
-            height: 100vh;
-            box-sizing: border-box;
-            background-color: rgba(255, 255, 255, 0.9); /* Optional: Add a semi-transparent background to the main panel */
-            position: relative;
-            z-index: 1; /* Ensure the main panel is above the left panel */
-        }
-        .main-panel section {
-            margin-bottom: 20px;
-        }
-        .main-panel h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
+        .main-content {
+            width: 75%;
         }
     </style>
 </head>
 <body>
-    <!-- Include the left panel template -->
-    <div id="left-panel-container"></div>
-    <div class="main-panel">
-        <section>
-            <h2>About Me</h2>
-            <p>This is the about me section. You can write a brief introduction about yourself here.</p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <p>This section can list your projects. You can add links and descriptions for each project.</p>
-        </section>
-        <section>
-            <h2>Blog</h2>
-            <p>This section can contain your blog posts. You can add links to individual blog posts here.</p>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>This section can contain your contact information. You can add a contact form or email address here.</p>
-        </section>
+    <div class="left-panel" id="left-panel">
+        <!-- Left panel content will be loaded here -->
     </div>
+    <div class="main-content" id="main-content">
+        <!-- Main content will be loaded here -->
+    </div>
+
     <script>
-        // Fetch and include the left panel template
-        fetch('/templates/left-panel.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('left-panel-container').innerHTML = data;
-            });
+        // Function to load HTML content into a div
+        function loadContent(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading content:', error));
+        }
+
+        // Load left panel and main content
+        loadContent('templates/left-panel.html', 'left-panel');
+        loadContent('pages/subpage.html', 'main-content');
     </script>
 </body>
 </html>
