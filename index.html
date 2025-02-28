@@ -15,6 +15,11 @@
         .left-panel {
             width: 25%;
             border-right: 1px solid #e1e4e8;
+            background-image: url('images/P1040161.jpg'); /* Path to your background image */
+            background-size: cover; /* Ensures the image covers the entire panel */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            position: relative; /* Ensures content is positioned relative to the panel */
         }
         .main-content {
             width: 75%;
@@ -32,7 +37,7 @@
             font-size: 14px;
             font-weight: 500;
             color: #0366d6;
-            background-color: transparent;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for buttons */
             border: 1px solid #e1e4e8;
             border-radius: 6px;
             cursor: pointer;
@@ -40,9 +45,15 @@
             transition: background-color 0.2s, color 0.2s;
         }
         .github-btn:hover {
-            background-color: #f3f4f6;
+            background-color: rgba(243, 244, 246, 0.8);
             color: #0366d6;
             border-color: #d1d5da;
+        }
+        .profile-photo {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
         }
     </style>
 </head>
