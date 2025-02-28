@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Website Layout</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        html, body {
+            height: 100%;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
             display: flex;
-            height: 100vh;
         }
         .left-panel {
             width: 250px;
             background-color: #f4f4f4;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            height: 100vh;
+            box-sizing: border-box;
         }
         .left-panel img {
             border-radius: 50%;
@@ -33,6 +33,7 @@
         .left-panel ul {
             list-style-type: none;
             padding: 0;
+            margin-top: 20px;
         }
         .left-panel ul li {
             margin: 10px 0;
@@ -48,6 +49,8 @@
             flex-grow: 1;
             padding: 20px;
             overflow-y: auto;
+            height: 100vh;
+            box-sizing: border-box;
         }
         .main-panel section {
             margin-bottom: 20px;
@@ -60,10 +63,8 @@
 </head>
 <body>
     <div class="left-panel">
-        <div>
-            <img src="path/to/your/photo.jpg" alt="Your Photo">
-            <h2>Your Name</h2>
-        </div>
+        <img src="path/to/your/photo.jpg" alt="Your Photo">
+        <h2>Your Name</h2>
         <ul>
             <li><a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a></li>
             <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
