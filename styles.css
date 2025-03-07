@@ -2,7 +2,9 @@ body {
             display: flex;
             font-family: Arial, sans-serif;
         }
-
+.spaced-element {
+            margin-top: 15px; /* Adjust the value as needed */
+}
 .pdf-container {
     width: 80%;
     height: 80vh; /* Adjust height as needed */
