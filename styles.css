@@ -2,6 +2,12 @@ body {
             display: flex;
             font-family: Arial, sans-serif;
         }
+
+.pdf-container {
+    width: 80%;
+    height: 80vh; /* Adjust height as needed */
+    border: 1px solid #ccc;
+}
 .left-panel, .main-content {
     padding: 20px;
 }
