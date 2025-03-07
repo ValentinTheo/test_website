@@ -13,6 +13,8 @@ body {
 }
 .main-content {
     width: 75%;
+    font-size: 1.2rem;
+    overflow: hidden; /* Prevents internal scrolling */
  /*    font-size: 1.2rem; Adjust as needed (1rem = default browser font size) */
 }
 .left-panel ul {
