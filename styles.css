@@ -1,3 +1,7 @@
+.main-content {
+    font-size: 1.2rem; /* Adjust as needed (1rem = default browser font size) */
+}
+
 .left-panel {
     background-image: url('images/P1040161.JPG'); /* Adjust the path based on your folder structure */
     background-size: cover; /* Ensures the image covers the entire panel */
