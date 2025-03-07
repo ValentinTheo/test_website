@@ -1,3 +1,12 @@
+.left-panel {
+    background-image: url('images/P1040161.JPG'); /* Adjust the path based on your folder structure */
+    background-size: cover; /* Ensures the image covers the entire panel */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    padding: 20px; /* Adjust as needed */
+    color: white; /* Ensures text is readable */
+}
+
 .left-panel button {
     background: none;
     border: none;
@@ -9,6 +18,6 @@
 }
 
 .left-panel button:hover {
-    color: blue;
+    color: white;
     text-decoration: none;
 }
