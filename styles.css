@@ -2,6 +2,10 @@ body {
             display: flex;
             font-family: Arial, sans-serif;
         }
+
+.section {
+            margin-bottom: 50px; /* Adjust the value as needed */
+        }
 .spaced-element {
             margin-top: 15px; /* Adjust the value as needed */
 }
