@@ -2,7 +2,9 @@ body {
             display: flex;
             font-family: Arial, sans-serif;
         }
-
+.spaced-list li {
+            margin-bottom: 10px; /* Adjust the value as needed */
+        }
 .section {
             margin-bottom: 50px; /* Adjust the value as needed */
         }
