@@ -3,13 +3,13 @@ body {
             font-family: Arial, sans-serif;
         }
 .spaced-list li {
-            margin-bottom: 10px; /* Adjust the value as needed */
+            margin-bottom: 100px; /* Adjust the value as needed */
         }
 .section {
-            margin-bottom: 50px; /* Adjust the value as needed */
+            margin-bottom: 500px; /* Adjust the value as needed */
         }
 .spaced-element {
-            margin-top: 15px; /* Adjust the value as needed */
+            margin-top: 150px; /* Adjust the value as needed */
 }
 .pdf-container {
     width: 80%;
