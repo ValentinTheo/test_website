@@ -1,4 +1,5 @@
 body {
+            height: 100%;
             display: flex;
             font-family: Arial, sans-serif;
         }
@@ -16,23 +17,59 @@ body {
     height: 80vh; /* Adjust height as needed */
     border: 1px solid #ccc;
 }
-.left-panel, .main-content {
-    padding: 20px;
-}
+
 .main-content {
     width: 75%;
     font-size: 1.2rem;
+    padding: 20px;
     overflow: hidden; /* Prevents internal scrolling */
  /*    font-size: 1.2rem; Adjust as needed (1rem = default browser font size) */
 }
+
+/* .main-panel {
+flex-grow: 1;
+padding: 20px;
+overflow-y: auto;
+height: 100vh;
+box-sizing: border-box;
+}
+.main-panel section {
+margin-bottom: 20px;
+}
+.main-panel h2 {
+border-bottom: 2px solid #ccc;
+padding-bottom: 5px;
+} */
+
+.left-panel {
+    background-image: url('images/P1040161.JPG'); /* Adjust the path based on your folder structure */
+    background-size: cover; /* Ensures the image covers the entire panel */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    padding: 20px; /* Adjust as needed */
+    color: white; /* Ensures text is readable */
+}
+
 .left-panel ul {
     list-style-type: none;
-    padding: 0;
+    padding: 100px;
+    margin-top: 20px;
 }
+
 .left-panel li {
 /*     margin-bottom: 10px; */
     padding-bottom: 15px;
 }
+.left-panel button {
+    background: none;
+    border: none;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+}
+
 .github-btn {
     display: inline-block;
     padding: 8px 16px;
@@ -58,24 +95,6 @@ body {
     object-fit: cover;
 }
 
-.left-panel {
-    background-image: url('images/P1040161.JPG'); /* Adjust the path based on your folder structure */
-    background-size: cover; /* Ensures the image covers the entire panel */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repetition */
-    padding: 20px; /* Adjust as needed */
-    color: white; /* Ensures text is readable */
-}
-
-.left-panel button {
-    background: none;
-    border: none;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 0;
-    font: inherit;
-}
 
 .left-panel button:hover {
     color: white;
