@@ -50,14 +50,13 @@ padding-bottom: 5px;
     color: white; /* Ensures text is readable */
 }
 
-.left-panel ul {
+/* .left-panel ul {
     list-style-type: none;
     padding: 100px;
     margin-top: 20px;
 }
 
 .left-panel li {
-/*     margin-bottom: 10px; */
     padding-bottom: 15px;
 }
 .left-panel button {
@@ -76,7 +75,7 @@ padding-bottom: 5px;
     font-size: 14px;
     font-weight: 500;
     color: #0366d6;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for buttons */
+    background-color: rgba(255, 255, 255, 0.8); 
     border: 1px solid #e1e4e8;
     border-radius: 6px;
     cursor: pointer;
@@ -99,4 +98,4 @@ padding-bottom: 5px;
 .left-panel button:hover {
     color: white;
     text-decoration: none;
-}
+} */
