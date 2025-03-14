@@ -12,11 +12,6 @@ body {
 .spaced-element {
             margin-top: 150px; 
 } */
-.pdf-container {
-    width: 80%;
-    height: 80vh; /* Adjust height as needed */
-    border: 1px solid #ccc;
-}
 
 .main-content {
     width: 75%;
@@ -47,7 +42,7 @@ padding-bottom: 5px;
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repetition */
     padding: 20px; /* Adjust as needed */
-    color: white; /* Ensures text is readable */
+    color: black; /* Ensures text is readable */
 }
 
 /* .left-panel ul {
