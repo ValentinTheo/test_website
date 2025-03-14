@@ -3,15 +3,15 @@ body {
             display: flex;
             font-family: Arial, sans-serif;
         }
-.spaced-list li {
-            margin-bottom: 100px; /* Adjust the value as needed */
+/* .spaced-list li {
+            margin-bottom: 100px; 
         }
 .section {
-            margin-bottom: 500px; /* Adjust the value as needed */
+            margin-bottom: 500px; 
         }
 .spaced-element {
-            margin-top: 150px; /* Adjust the value as needed */
-}
+            margin-top: 150px; 
+} */
 .pdf-container {
     width: 80%;
     height: 80vh; /* Adjust height as needed */
