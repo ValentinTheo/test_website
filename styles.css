@@ -40,9 +40,9 @@ body {
 /* MAIN CONTENT (shifted to the right so it doesn't overlap panel) */
 .main-content {
     margin-left: 25%;  /* same as .left-panel width */
-    flex: 1;
+    /* flex: 1; */
     padding: 20px;
     font-size: 1.2rem;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     box-sizing: border-box;
 }
