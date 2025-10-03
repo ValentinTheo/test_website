@@ -10,29 +10,96 @@
     <div class="left-panel" id="left-panel">
         <!-- Left panel content will be loaded here -->
     </div>
-    <div class="main-content" id="main-content">
-        <!-- Main content will be loaded here -->
-    </div>
+    
+<div class="main-content" id="main-content">
+  <h1>About me</h1>
 
-    <script>
-        // Function to load HTML content into a div
-        function loadContent(url, elementId) {
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(elementId).innerHTML = data;
-                })
-                .catch(error => console.error('Error loading content:', error));
-        }
+  <p>
+    I am a 4th year PhD candidate at 
+    <a href="https://crest.science/">CREST</a>, 
+    <a href="https://www.ensae.fr/en/">ENSAE Paris</a>, 
+    <a href="https://www.ip-paris.fr/en">Institut Polytechnique de Paris</a> 
+    under the supervision of 
+    <a href="https://pierrecboyer.com/">Pierre Boyer</a> and 
+    <a href="https://faculty.crest.fr/mvisser/">Michael Visser</a> 
+    since September 2022.
+  </p>
 
-        // Function to load a page into the main content area
-        function loadPage(url) {
-            loadContent(url, 'main-content');
-        }
+  <p>
+    My research lies in the field of <b>Public Economics</b> where I especially study the different channels through which taxes affect corporate behavior using both theory and empirical analysis.
+  </p>
 
-        // Load left panel and default main content
-        loadContent('templates/left-panel.html', 'left-panel');
-        loadContent('pages/about.html', 'main-content'); // Default page
-    </script>
+  <p>
+    I am on the <span style="color:red; font-weight:bold;">2025/2026 academic job market</span>.
+  </p>
+
+  <p>
+    I visited the <b>University of California, Berkeley</b>, hosted by <b>Emmanuel Saez</b> during the <b>2025 Spring semester</b>.
+  </p>
+
+  <h3 style="text-align:center; color:red;">References</h3>
+  <p style="text-align:center;">
+    <a href="https://pierrecboyer.com/">Pierre Boyer</a> &nbsp; 
+    <a href="https://faculty.crest.fr/mvisser/">Michael Visser</a> &nbsp; 
+    <a href="https://www.bertrandgarbinti.com/">Bertrand Garbinti</a> &nbsp; 
+    <a href="https://eml.berkeley.edu/~saez/">Emmanuel Saez</a>
+  </p>
+
+  <p><b>Contact</b>: <a href="mailto:theo.valentin@ensae.fr">theo.valentin@ensae.fr</a></p>
+
+  <h2>Curriculum Vitae</h2>
+  <iframe src="https://valentintheo.github.io/files/Curriculum_Vitae_woWInP.pdf" width="100%" height="900px">
+    <p>Your browser does not support iframes. 
+       <a href="https://valentintheo.github.io/files/Curriculum_Vitae_woWInP.pdf">Download the PDF</a>.
+    </p>
+  </iframe>
+
+  <h2>Working papers</h2>
+
+  <h3>Non-linear Corporate Income Tax: Learning, Intensive and Extensive Margins</h3>
+  <p><i>
+    This paper provides new evidence on how firms learn corporate tax reforms and how the latter affects both business creation and firm splitting...
+  </i></p>
+
+  <p style="text-align:center;">
+    <img src="../files/learning.gif" width="700">
+  </p>
+
+  <p style="text-align:center;">
+    <img src="../files/business_creation.gif" width="700">
+  </p>
+
+  <p><b>Paper presented at:</b> UC Berkeley Public Finance Seminar (2025), Center for Business Taxation Doctoral Conference (Oxford, 2025), ...</p>
+
+  <h3>Charitable Giving, Tax Design, and Tax Consent</h3>
+  <p><i>
+    This paper examines how the design of tax incentives shapes charitable giving and how non-monetary motives influence such responses...
+  </i></p>
+
+  <h2>Selected work in progress</h2>
+  <ul>
+    <li>Taxing Digital Addiction</li>
+    <li>Optimal Corporate Taxation with Welfare Weights</li>
+  </ul>
+
+  <h2>Non-academic Publications &amp; Papers</h2>
+  <ul>
+    <li>
+      <a href="https://www.insee.fr/fr/statistiques/5232043?sommaire=5232077">En 2020, la chute de la consommation...</a>, with 
+      <a href="https://www.odranbonnet.com">Odran Bonnet</a> and Tom Olivia, Note de conjoncture, 2021
+    </li>
+    <li>
+      <a href="http://jms-insee.fr/jms2022s19_2/">Prédire l’activité économique à partir d’articles de presse</a>, with Stéphanie Himpens and Guillaume Arion, JMS INSEE, 2022.
+    </li>
+  </ul>
+
+  <h2>TA sessions</h2>
+  <ul>
+    <li><a href="https://www.ensae.fr/courses/156">Econometrics - 3A CI/MS</a>, ENSAE Paris, Pr. Bertrand Garbinti (Graduate level, Fall 2022)</li>
+    <li><a href="https://www.ensae.fr/courses/145">Econometrics 1</a>, ENSAE Paris, Pr. Xavier d'Haultfoeuille (Graduate level, Fall 2022)</li>
+    <li><a href="https://www.ensae.fr/courses/150">Econometrics 2</a>, ENSAE Paris, Pr. Michael Visser (Graduate level, Spring 2022)</li>
+    <li>Industrial Organization, Université Paris Descartes, (Undergraduate level, Spring 2021)</li>
+  </ul>
+</div> 
 </body>
 </html>
