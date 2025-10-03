@@ -1,26 +1,48 @@
 body {
+    margin: 0;
     height: 100vh;      /* full height */
-    display: flex;      /* enables flexbox layout */
-    margin: 0;          /* remove default margins */
+    display: flex;      /* split into left + main */
     font-family: Arial, sans-serif;
 }
 
+/* LEFT PANEL (sticky, full height, background image) */
 .left-panel {
-    width: 25%; /* fixed proportion of screen width */
-    min-width: 200px;   /* optional: prevent it from collapsing too small */
-    background-image: url('images/P1040161.JPG');
-    background-size: cover;
+    position: fixed;          /* stays in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 25%;               /* or adjust to taste */
+    min-width: 200px;
+    height: 100vh;            /* fill viewport vertically */
+    
+    background-image: url('images/background-left.jpg'); /* <-- background image for panel */
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
+
+    color: white;             /* text readable on dark bg */
     padding: 20px;
-    color: black;
-    box-sizing: border-box; /* padding doesn’t make it overflow */
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;   /* stack content vertically */
+    align-items: center;      /* center content horizontally */
 }
 
+/* Example: profile picture inside the panel */
+.left-panel img.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
+
+/* MAIN CONTENT (shifted to the right so it doesn't overlap panel) */
 .main-content {
-    flex: 1; /* takes remaining space */
-    font-size: 1.2rem;
+    margin-left: 25%;  /* same as .left-panel width */
+    flex: 1;
     padding: 20px;
-    overflow: auto; /* allow scrolling if needed */
+    font-size: 1.2rem;
+    overflow-y: auto;
     box-sizing: border-box;
 }
