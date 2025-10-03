@@ -1,96 +1,26 @@
 body {
-            height: 100%;
-            display: flex;
-            font-family: Arial, sans-serif;
-        }
-/* .spaced-list li {
-            margin-bottom: 100px; 
-        }
-.section {
-            margin-bottom: 500px; 
-        }
-.spaced-element {
-            margin-top: 150px; 
-} */
-
-.main-content {
-    width: 75%;
-    font-size: 1.2rem;
-    padding: 20px;
-    overflow: hidden; /* Prevents internal scrolling */
- /*    font-size: 1.2rem; Adjust as needed (1rem = default browser font size) */
+    height: 100vh;      /* full height */
+    display: flex;      /* enables flexbox layout */
+    margin: 0;          /* remove default margins */
+    font-family: Arial, sans-serif;
 }
-
-/* .main-panel {
-flex-grow: 1;
-padding: 20px;
-overflow-y: auto;
-height: 100vh;
-box-sizing: border-box;
-}
-.main-panel section {
-margin-bottom: 20px;
-}
-.main-panel h2 {
-border-bottom: 2px solid #ccc;
-padding-bottom: 5px;
-} */
 
 .left-panel {
-    background-image: url('images/P1040161.JPG'); /* Adjust the path based on your folder structure */
-    background-size: cover; /* Ensures the image covers the entire panel */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repetition */
-    padding: 20px; /* Adjust as needed */
-    color: black; /* Ensures text is readable */
+    width: 25%; /* fixed proportion of screen width */
+    min-width: 200px;   /* optional: prevent it from collapsing too small */
+    background-image: url('images/P1040161.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: black;
+    box-sizing: border-box; /* padding doesn’t make it overflow */
 }
 
-/* .left-panel ul {
-    list-style-type: none;
-    padding: 100px;
-    margin-top: 20px;
+.main-content {
+    flex: 1; /* takes remaining space */
+    font-size: 1.2rem;
+    padding: 20px;
+    overflow: auto; /* allow scrolling if needed */
+    box-sizing: border-box;
 }
-
-.left-panel li {
-    padding-bottom: 15px;
-}
-.left-panel button {
-    background: none;
-    border: none;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 0;
-    font: inherit;
-}
-
-.github-btn {
-    display: inline-block;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #0366d6;
-    background-color: rgba(255, 255, 255, 0.8); 
-    border: 1px solid #e1e4e8;
-    border-radius: 6px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
-}
-.github-btn:hover {
-    background-color: rgba(243, 244, 246, 0.8);
-    color: #0366d6;
-    border-color: #d1d5da;
-}
-.profile-photo {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-
-.left-panel button:hover {
-    color: white;
-    text-decoration: none;
-} */
